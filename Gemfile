@@ -1,4 +1,4 @@
-group :test do
-  gem 'rake'
-  gem 'rack'
-end
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'rack'
