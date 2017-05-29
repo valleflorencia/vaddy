@@ -10,11 +10,6 @@ vaddy_user  = ARGV[1] != nil ? ARGV[1] : ENV["VADDY_USER"];
 vaddy_host  = ARGV[2] != nil ? ARGV[2] : ENV["VADDY_HOST"];
 vaddy_crawl = ARGV[3] != nil ? ARGV[3] : ENV["VADDY_CRAWL_ID"];
 
-puts vaddy_token
-puts vaddy_user
-puts vaddy_host
-puts vaddy_crawl
-
 if( vaddy_token == nil || vaddy_user == nil || vaddy_host == nil) then
   puts "ERROR: need more argument or env."
   puts "USAGE: ruby vaddy.rb auth_key username host"
