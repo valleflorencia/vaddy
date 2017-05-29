@@ -13,6 +13,9 @@ def start_scan(request_url, start_query_hash)
   response = Net::HTTP.post_form(uri, start_query_hash)
   result = JSON.parse(response.body)
 
+  puts "Respuesta de Servicio"
+  puts result
+  
   #puts result
   scan_id = result["scan_id"];
   return scan_id
