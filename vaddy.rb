@@ -39,6 +39,8 @@ start_query_hash = base_info.dup
 start_query_hash["action"] = "start"
 start_query_hash["crawl_id"] = crawl_id
 
+puts start_url
+  
 start_url = API_SERVER + "/v1/scan"
 scan_id = start_scan(start_url, start_query_hash)
 
